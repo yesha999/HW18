@@ -1,7 +1,7 @@
 from typing import Dict, Any
 
 from application.dao.movies import MoviesDAO
-from application.services.schemas.movie import MovieSchema
+from application.services.helpers.schemas.movie import MovieSchema
 
 
 class MoviesService:

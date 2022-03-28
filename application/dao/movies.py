@@ -22,7 +22,7 @@ class MoviesDAO:
         return self.get_one(uid)
 
     def create(self, data: Dict[str, Any]):
-        """Добавляем новый фильм, получаем загадочную сущность в неизвестном формате"""
+        """Добавляем новый фильм, получаем его же"""
         new_movie = Movie(**data)
         self.session.add(new_movie)
         self.session.commit()
